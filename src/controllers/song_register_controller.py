@@ -16,7 +16,6 @@ class SongRegisterController:
     year=int(new_song_informations["year"])
     if year >= 2026:
       raise Exception("Ano de musica invalido")
-    
 
   def __verify_if_song_already_registered(self, new_song_informations: dict) -> None:
     #interecao com models
@@ -28,7 +27,7 @@ class SongRegisterController:
 
   def __format_response(self, new_song_informations: dict) -> dict:
     return {
-      "succes":True,
+      "success":True,
       "count":1,
       "attributes":{
         "title":new_song_informations["title"]
@@ -37,6 +36,6 @@ class SongRegisterController:
   
   def __format_error_response(self, err:Exception) -> dict:
     return{
-        "success ": False,
+        "success": False,
         "error": str(err)
     }
