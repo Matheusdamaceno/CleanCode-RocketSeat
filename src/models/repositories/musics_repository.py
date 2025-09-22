@@ -12,8 +12,10 @@ class __MusicsRepository:
       if music.title == music_title:
         return music
       
+    return None
+      
   def get_all_songs(self) -> list:
     return self.__music_list
   
  # Singleton - Desing Pattern
-muusics_repository = __MusicsRepository()
+musics_repository = __MusicsRepository()
