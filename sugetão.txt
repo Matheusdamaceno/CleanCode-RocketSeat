@@ -1,0 +1,2 @@
+criar uma mensagem de erro para quando o usuario digitar algo que nao seja um inteiro;
+criar mais uma aba de busca de musica pelo titulo;
